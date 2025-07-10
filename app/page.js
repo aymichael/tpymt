@@ -1,5 +1,6 @@
 import { Forum } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const lobster = Forum({
   subsets: ["latin"],
@@ -8,21 +9,42 @@ const lobster = Forum({
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-full">
       <h1 className={`text-6xl/20 ${lobster.className} font-bold italic text-center my-24 select-none`}>
         Training Programme for Young Mathematics Talent
       </h1>
-      <p>
-        We extend our heartfelt gratitude to the following organizations for their generous support of the Training Programme for Young Mathematics Talent(TYPMT):
+      <p className="indent-8">
+        Since 2023, The TUYF Charitable Trust has generously supported the Training Programme for Young Mathematics. It is a joint programme that has been co-organized by the Department of Mathematics at CUHK, CUHK Shenzhen Research Institute (SZRI) and the Office for Greater Bay Area Developments (GBAO) at CUHK.
       </p>
-      <ul className="list-none list-outside my-4">
-        <li><b>Organizer: </b>Department of Mathematics, CUHK</li>
-        <li><b>Co-organizer: </b>CUHK Shenzhen Research Institute and Office for Greater Bay Area Developments, CUHK </li>
-        <li><b>Sponsor: </b>The TUYF Charitable Trust</li>
-        <li><b>Supporting Units: </b>Faculty of Science, CUHK and SZVUP</li>
-      </ul>
-      <div className="flex flex-col items-center"> 
-      <Link href="application" className="mt-8 text-4xl/8 font-bold text-blue-500">Apply Now!</Link>
+      <br />
+      <p className="indent-8">
+        This training programme provides a two-week intensive training to mathematically talented young high-school students who are interested in science and innovation in the Greater Bay Area (GBA). It aims to encourage more students to choose STEM-related subjects for further studies in universities. In the long run, this lays a foundation for cultivating and nurturing the next generation of innovation and technology talents, which thus maintains the sustainability of the development of science and technology in the Region and even the Country.
+      </p>
+      <div className="flex flex-col items-center">
+        <Link href="application" className="mt-8 text-4xl/8 font-bold text-blue-500">Apply Now!</Link>
+      </div>
+      <div className="flex mt-auto items-center justify-end w-full space-x-4">
+        <Image
+          src="/department.png"
+          alt="Department of Mathematics, CUHK"
+          width={323}
+          height={100}
+          className="h-16 w-auto bg-white"
+        />
+        <Image
+          src="/research.png"
+          alt="CUHK Shenzhen Research Institute"
+          width={2221}
+          height={710}
+          className="h-16 w-auto bg-white"
+        />
+        <Image
+          src="/GBAoffice.png"
+          alt="Office for Greater Bay Area Developments, CUHK"
+          width={3624}
+          height={1027}
+          className="h-16 w-auto bg-white"
+        />
       </div>
     </div>
   );
