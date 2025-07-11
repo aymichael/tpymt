@@ -19,12 +19,12 @@ export default function Navbar() {
     const [selectedNav, setSelectedNav] = useState(-1);
     const pathname = usePathname();
     return (
-        <header className={`flex select-none w-full flex-col text-lg/8 md:shadow-md fixed md:items-center ${lato.className} z-20`} >
+        <header className={`flex select-none w-full flex-col text-lg/8 md:text-xl/8 md:shadow-md fixed md:items-center ${lato.className} z-20`} >
             <div className={`bg-[#fa9863] md:shadow-none ${isOpen ? "" : "shadow-md"} flex flex-col w-full md:px-0 px-2 items-center text-white`} onMouseLeave={() => setCurrentNav(-1)}>
                 <div className="md:w-[48rem] lg:w-[64rem] flex flex-row items-center w-full justify-between h-16">
                     <div>
                         <Link href="/">
-                            <span className="text-2xl font-bold">TPYMT</span>
+                            <span className="text-xl/8 md:text-2xl/8 font-bold">TPYMT</span>
                         </Link>
                     </div>
                     <div className="flex flex-row items-center h-full gap-2">
@@ -77,12 +77,12 @@ export default function Navbar() {
                             key={index}
                             className="w-full flex flex-col last:border-none border-b border-gray-300 cursor-pointer "
                         >
-                            {index < 2 ? <div className="flex mx-4 my-2 flex-row justify-between items-center " onClick={() => setSelectedNav(index === selectedNav ? -1 : index)}>
+                            {index < 2 ? <div className="flex mx-4 my-2 flex-row justify-between items-center font-bold" onClick={() => setSelectedNav(index === selectedNav ? -1 : index)}>
                                 {page}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" className={`transition-all duration-300 ease-in-out fill-white ${selectedNav === index ? "rotate-180" : ""}`}
                                 ><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" /></svg>
                             </div> :
-                                <Link href={`/${page.toLowerCase().replace(" ", "-")}`} className="mx-4 my-2 flex flex-row justify-between items-center" onClick={() => { setIsOpen(false); setSelectedNav(-1); }}>
+                                <Link href={`/${page.toLowerCase().replace(" ", "-")}`} className="mx-4 my-2 flex flex-row justify-between items-center font-bold" onClick={() => { setIsOpen(false); setSelectedNav(-1); }}>
                                     {page}
                                 </Link>}
                             <div className={`flex flex-col transition-all ease-in-out duration-300 origin-top gap-2 bg-[#e09a13] `}>
@@ -90,7 +90,7 @@ export default function Navbar() {
                                     <Link
                                         key={subindex}
                                         href={`/${subpageURL[index][subindex]}`}
-                                        className="w-full p-2 px-8 flex flex-row justify-between items-center last:border-none border-b border-gray-200"
+                                        className="w-full p-2 px-8 flex flex-row justify-between items-center last:border-none border-b border-gray-200 font-bold"
                                         onClick={() => { setIsOpen(false); setSelectedNav(-1); }}
                                     >
                                         {subpage}

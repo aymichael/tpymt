@@ -12,17 +12,17 @@ const MessageCard = ({ name, position, content }) => {
         <div className="w-full bg-gray-100 dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center space-x-4">
                 <div>
-                    <h3 className="text-2xl font-bold">{name}</h3>
+                    <h3 className="text-xl/8 md:text-2xl/8 font-bold">{name}</h3>
                     <div className="text-gray-600 flex flex-col space-y-1 dark:text-gray-400">
                         {position.map((pos, index) => (
-                            <p key={index}>{pos}</p>
+                            <p key={index} className="text-base md:text-base">{pos}</p>
                         ))}
                     </div>
                 </div>
             </div>
             <div className="mt-4 text-lg flex flex-col space-y-4">
                 {content.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} className="indent-8 text-base md:text-lg/8">{paragraph}</p>
                 ))}
             </div>
         </div>
@@ -67,7 +67,7 @@ export default function Page() {
     return (
 
         <div>
-            <h1 className="text-3xl/8 font-bold mb-8">
+            <h1 className="text-4xl/8 font-bold md:mb-8 mb-4">
                 Message from Management
             </h1>
             <Swiper
