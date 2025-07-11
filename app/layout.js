@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
               {children}
             </div>
           </main>
-          <footer className="w-full bg-gray-100 dark:bg-gray-600 p-8 text-left flex justify-center">
+          {/* <footer className="w-full bg-gray-100 dark:bg-gray-600 p-8 text-left flex justify-center">
             <div className="flex w-full justify-between items-center md:w-[48rem] lg:w-[64rem]">
               <span className="text-xs">
                 ©&nbsp;EPYMT
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
                 Email: <Link href="mailto:epymt.math@cuhk.edu.hk" className="text-indigo-500 dark:text-indigo-300">epymt.math@cuhk.edu.hk</Link>
               </span>
             </div>
-          </footer>
+          </footer> */}
         </div>
       </body>
     </html>
