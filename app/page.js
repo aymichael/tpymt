@@ -1,6 +1,6 @@
 import { Forum } from "next/font/google";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const lobster = Forum({
   subsets: ["latin"],
@@ -23,28 +23,28 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <Link href="application" className="mt-8 text-4xl/8 font-bold text-blue-500">Apply Now!</Link>
       </div>
-      <div className="flex mt-auto md:flex-row flex-col items-end justify-end w-full space-x-4">
-        <Image
-          src="/department.png"
-          alt="Department of Mathematics, CUHK"
-          width={323}
-          height={100}
-          className="h-16 w-auto bg-white"
-        />
-        <Image
-          src="/research.png"
-          alt="CUHK Shenzhen Research Institute"
-          width={2221}
-          height={710}
-          className="h-16 w-auto bg-white"
-        />
-        <Image
-          src="/GBAoffice.png"
-          alt="Office for Greater Bay Area Developments, CUHK"
-          width={3624}
-          height={1027}
-          className="h-16 w-auto bg-white"
-        />
+      <div className="flex mt-auto md:flex-row flex-col md:items-center justify-end items-end md:justify-between  md:space-x-4 md:space-y-0 space-y-2 w-full">
+          <Image
+            src="/department.png"
+            alt="Department of Mathematics, CUHK"
+            width={323}
+            height={100}
+            className="h-16 w-auto object-contain"
+          />
+          <Image
+            src="/research.png"
+            alt="CUHK Shenzhen Research Institute"
+            width={2221}
+            height={710}
+            className="h-16 w-auto object-contain"
+          />
+          <Image
+            src="/GBAoffice.png"
+            alt="Office for Greater Bay Area Developments, CUHK"
+            width={3624}
+            height={1027}
+            className="h-16 w-auto object-contain"
+          />
       </div>
     </div>
   );
