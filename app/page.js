@@ -10,7 +10,7 @@ const lobster = Forum({
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-full">
-      <h1 className={`text-6xl/20 ${lobster.className} font-bold italic text-center my-24 select-none`}>
+      <h1 className={`text-4xl/16 md:text-6xl/20 ${lobster.className} font-bold italic text-center md:my-24 my-12 select-none`}>
         Training Programme for Young Mathematics Talent
       </h1>
       <p className="indent-8 text-base md:text-lg/8">
@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <Link href="application" className="mt-8 text-4xl/8 font-bold text-blue-500">Apply Now!</Link>
       </div>
-      <div className="flex mt-auto items-center justify-end w-full space-x-4">
+      <div className="flex mt-auto md:flex-row flex-col items-end justify-end w-full space-x-4">
         <Image
           src="/department.png"
           alt="Department of Mathematics, CUHK"
