@@ -5,9 +5,10 @@ import { useState } from "react";
 import clsx from "clsx";
 import { redirect, usePathname } from "next/navigation";
 import { year } from "./data";
-import { Lato } from "next/font/google";
+import { Lato, Crimson_Text } from "next/font/google";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400"] });
+const crimson = Crimson_Text({ subsets: ["latin"], weight: ["400"] });
 
 export default function Navbar() {
     const currCourseURL = year.toString();
@@ -23,8 +24,9 @@ export default function Navbar() {
             <div className={`bg-[#fa9863] md:shadow-none ${isOpen ? "" : "shadow-md"} flex flex-col w-full md:px-0 px-2 items-center text-white`} onMouseLeave={() => setCurrentNav(-1)}>
                 <div className="md:w-[48rem] lg:w-[64rem] flex flex-row items-center w-full justify-between h-16">
                     <div>
-                        <Link href="/">
-                            <span className="text-xl/8 md:text-2xl/8 font-bold">TPYMT</span>
+                        <Link href="/" className={`md:block hidden ${crimson.className} lg:text-2xl/8 text-xl`}>Training Programme for Young Mathematics Talent
+                        </Link>
+                        <Link href="/" className={`md:hidden block ${crimson.className} text-2xl/8`}>TPYMT
                         </Link>
                     </div>
                     <div className="flex flex-row items-center h-full gap-2">
