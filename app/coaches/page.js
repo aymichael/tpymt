@@ -8,7 +8,7 @@ function CoachesBox({ photo, name, intro }) {
                     <Image src={photo} alt={name} layout="fill" objectFit="cover" className="rounded-lg" />
                 </div>
             <div className="w-full mt-4 md:mt-0 md:ml-4">
-                <h2 className="text-xl/8 md:text-2xl/8 font-bold">{name}</h2>
+                <h2 className="text-xl/8 md:text-2xl/8 font-bold text-center md:text-left">{name}</h2>
                 <p className="text-base md:text-lg/8 mt-2 text-gray-700">{intro}</p>
             </div>
         </div>
