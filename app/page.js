@@ -1,6 +1,6 @@
 import { Forum } from "next/font/google";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const lobster = Forum({
   subsets: ["latin"],
