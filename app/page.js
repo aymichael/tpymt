@@ -20,10 +20,7 @@ export default function Home() {
       <p className="indent-8 text-base md:text-lg/8">
         This training programme provides a two-week intensive training to mathematically talented young high-school students who are interested in science and innovation in the Greater Bay Area (GBA). It aims to encourage more students to choose STEM-related subjects for further studies in universities. In the long run, this lays a foundation for cultivating and nurturing the next generation of innovation and technology talents, which thus maintains the sustainability of the development of science and technology in the Region and even the Country.
       </p>
-      <div className="flex flex-col items-center">
-        <Link href="application" className="mt-8 text-4xl/8 font-bold text-blue-500">Apply Now!</Link>
-      </div>
-      <div className="flex mt-auto md:flex-row flex-col md:items-center justify-end items-end md:justify-between  md:space-x-4 md:space-y-0 space-y-2 w-full">
+      <div className="flex mt-auto md:flex-row flex-col items-center md:justify-between  md:space-x-4 md:space-y-0 space-y-2 w-full">
           <Image
             src="/department.png"
             alt="Department of Mathematics, CUHK"
