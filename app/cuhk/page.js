@@ -25,13 +25,16 @@ export default function CUHKPage() {
                         <h3 className="text-xl/8 md:text-2xl/8 font-bold"><span className="text-6xl text-[#78176f]">8</span> Faculties</h3>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-md md:col-span-2 flex justify-center items-center gap-2">
-                        <span className="text-6xl text-[#78176f] font-bold">5</span>
-                        <h3 className="text-xl/8 md:text-2xl/8 font-bold max-w-prose">
-                            State Key Laboratories, established with the approval of the Ministry of Science and Technology of the People&apos;s Republic of China
+                        
+                        <h3 className="text-xl/8 md:text-2xl/8 font-bold max-w-prose hidden lg:block">
+                            <span className="text-6xl text-[#78176f] font-bold">5</span> State Key Laboratories, established with the approval of the Ministry of Science and Technology of the People&apos;s Republic of China
+                        </h3>
+                        <h3 className="text-xl/8 md:text-2xl/8 font-bold max-w-prose block lg:hidden text-center">
+                            <span className="text-6xl text-[#78176f] font-bold">5</span> State Key Laboratories*
                         </h3>
                     </div>
-
                 </div>
+                <p className="text-sm md:text-base mt-4">* established with the approval of the Ministry of Science and Technology of the People&apos;s Republic of China</p>
             </section>
             <section className="mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
