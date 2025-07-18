@@ -14,7 +14,7 @@ export default function Navbar() {
     const currCourseURL = year.toString();
     const pages = ["About", "Programme", "Student Life", "Contact Us"];
     const subpages = [["Message from Management", "CUHK", "Organizers", "Advisory Board", "Coaches"], ["Curriculum", "This Year's Courses", "Past Courses", "Guest Lectures"]];
-    const subpageURL = [["message", "cuhk", "organizers", "advisory-board", "coaches"], ["curriculum", `courses/${currCourseURL}`, "past-courses", "guest-lectures"], [], []];
+    const subpageURL = [["message", "cuhk", "organizers", "advisory-board", "coaches"], ["curriculum", `courses/${currCourseURL}`, "courses", "guest-lectures"], [], []];
     const [isOpen, setIsOpen] = useState(false);
     const [currentNav, setCurrentNav] = useState(-1);
     const [selectedNav, setSelectedNav] = useState(-1);
