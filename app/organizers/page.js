@@ -1,5 +1,5 @@
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function OrganizersPage() {
     return (
@@ -12,7 +12,7 @@ export default function OrganizersPage() {
                     alt="Department of Mathematics, CUHK"
                     width={323}
                     height={100}
-                    className="h-16 w-auto bg-white"
+                    className="h-16 w-auto object-contain"
                 />
             </div>
             <p className="mb-2 indent-8 text-base md:text-lg/8">
@@ -32,7 +32,7 @@ export default function OrganizersPage() {
                     alt="CUHK Shenzhen Research Institute"
                     width={2221}
                     height={710}
-                    className="h-16 w-auto bg-white"
+                    className="h-16 w-auto object-contain"
                 />
             </div>
             <p className="mb-4 indent-8 text-base md:text-lg/8">
@@ -45,7 +45,7 @@ export default function OrganizersPage() {
                     alt="Office for Greater Bay Area Developments, CUHK"
                     width={3624}
                     height={1027}
-                    className="h-16 w-auto bg-white"
+                    className="h-16 w-auto object-contain"
                 />
             </div>
             <p className="mb-2 indent-8 text-base md:text-lg/8">

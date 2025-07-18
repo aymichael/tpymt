@@ -34,7 +34,7 @@ export default function CUHKPage() {
                         </h3>
                     </div>
                 </div>
-                <p className="text-sm md:text-base mt-4">* established with the approval of the Ministry of Science and Technology of the People&apos;s Republic of China</p>
+                <p className="text-sm md:text-base mt-4 block lg:hidden">* established with the approval of the Ministry of Science and Technology of the People&apos;s Republic of China</p>
             </section>
             <section className="mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
