@@ -5,7 +5,7 @@ import { ArcherContainer, ArcherElement } from "react-archer";
 export default function CurriculumPage() {
     return (
         <div className="">
-            <h1 className="text-4xl/8 font-bold mb-8 text-gray-900 dark:text-white">Curriculum</h1>
+            <h1 className="text-4xl/16 font-bold mb-8 text-gray-900 dark:text-white">Curriculum</h1>
 
             <ArcherContainer>
                 <div className="grid grid-cols-2 gap-x-24 lg:gap-x-32 gap-y-4">

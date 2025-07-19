@@ -317,7 +317,7 @@ const timetable_2 = [
 export default function ClassTimetable() {
   return (
     <div>
-      <h1 className="text-4xl/8 text-center font-bold mb-8">Training Programme</h1>
+      <h1 className="text-4xl/16 text-center font-bold mb-8">Training Programme</h1>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Introduction</h2>
       <p className="text-base md:text-lg/8 indent-8 mb-8">
         Innovation drives development, and technology nurtures the future". The foundation of scientific and technological innovation lies in education, while talents are the keys to its achievement. To solidify GBA's status as a talent hub of the kind, the Department of Mathematics, Faculty of Science, CUHK has launched the "Training Programme for Young Mathematics Talents". Relying on CUHK's multi faceted resources and years of project experience, the programme aims at training mathematical-talented young students to acquire scientific literacy and innovation ability through the University's advanced mathematics concepts and methods, so as to lay a foundation for cultivating the next generation of innovation leaders for the Region, and even the Country.

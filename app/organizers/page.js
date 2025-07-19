@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function OrganizersPage() {
     return (
         <div>
-            <h1 className="text-4xl/8 font-bold mb-4">Organizer</h1>
+            <h1 className="text-4xl/16 font-bold mb-4">Organizer</h1>
             <div className="mb-4 flex md:flex-row flex-col justify-between items-center">
                 <h2 className="text-xl/8 md:text-2xl/8 font-bold underline md:text-left text-center">Department of Mathematics, Faculty of Science, CUHK</h2>
                 <Image
@@ -24,7 +24,7 @@ export default function OrganizersPage() {
             <p className="mb-6 indent-8 text-base md:text-lg/8">
                 The Department of Mathematics also focuses on the inheritance of knowledge. Over the years, many graduates have devoted themselves to scientific research in world-class universities and research institutes, including the Fields Medalist, Chinese mathematician Professor YAU Shing Tung. In addition, with the assistance of Professor YAU, the Department established the Institute of Mathematical Sciences in 1993 to further strengthen the training of mathematics talents.
             </p>
-            <h1 className="text-4xl/8 font-bold mb-4">Co-Organizers</h1>
+            <h1 className="text-4xl/16 font-bold mb-4">Co-Organizers</h1>
             <div className="mb-4 flex md:flex-row flex-col justify-between items-center">
                 <h2 className="text-xl/8 md:text-2xl/8 font-bold underline md:text-left text-center">CUHK ShenZhen Research Institute (SZRI)</h2>
                 <Image

@@ -24,7 +24,7 @@ const ProfileBox = ({ photoUrl, name, positions }) => {
 export default function AdvisoryBoardPage() {
     return (
         <div>
-            <h1 className="text-4xl/8 font-bold mb-4">Advisory Board</h1>
+            <h1 className="text-4xl/16 font-bold mb-4">Advisory Board</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
                 <ProfileBox
                     photoUrl="/CHUNGTszShun.jpg"

@@ -67,7 +67,7 @@ export default function Page() {
     return (
 
         <div>
-            <h1 className="text-4xl/8 font-bold md:mb-8 mb-4">
+            <h1 className="text-4xl/16 font-bold md:mb-8 mb-4">
                 Message from Management
             </h1>
             <Swiper

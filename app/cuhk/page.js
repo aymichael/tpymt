@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 export default function CUHKPage() {
     return (
         <div>
-            <h1 className="text-4xl/8 font-bold text-[#78176f] text-center mb-8">The Chinese University of Hong Kong</h1>
+            <h1 className="text-4xl/16 font-bold text-[#78176f] text-center mb-8">The Chinese University of Hong Kong</h1>
 
             {/* Introduction Section */}
             <section className="mb-8">
