@@ -7,7 +7,7 @@ import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/react'
 
 export default function TimeTable({ timetable }) {
   return (
-    <div>
+    <div className="mb-8">
       <TabGroup>
         <TabList className="flex space-x-2 rounded-xl bg-blue-500 dark:bg-blue-700 p-2 overflow-x-auto select-none">
           {timetable.map((day) => (

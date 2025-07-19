@@ -164,8 +164,152 @@ const timetable_1 = [
     date: "Aug 4",
     lecturer: "",
     events: [
-      { time: "9:00-12:00", description: ["Fun Report Competition","(Based on group reading on July 25, the project presentation workshop on July 30, and the Q&A session on August 3, teams will participate in a fun report competition. Teachers will score the reports; the winning team will receive rewards, though it won’t count toward grades.)"] },
+      { time: "9:00-12:00", description: ["Fun Report Competition", "(Based on group reading on July 25, the project presentation workshop on July 30, and the Q&A session on August 3, teams will participate in a fun report competition. Teachers will score the reports; the winning team will receive rewards, though it won’t count toward grades.)"] },
       { time: "13:30-17:00", description: "Completion Ceremony and Group Photo" }
+    ]
+  }
+];
+const timetable_2 = [
+  {
+    date: "Aug 14",
+    lecturer: "Dr Xiao Jingjing",
+    events: [
+      { time: "9:30-10:30", description: "Derivatives" },
+      { time: "10:30-11:30", description: "Derivatives" },
+      { time: "11:30-12:30", description: "Derivatives" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "Group work" },
+      { time: "16:00-17:30", description: "Q&A" },
+      { time: "18:30-20:30", description: "Orientation" }
+    ]
+  },
+  {
+    date: "Aug 15",
+    lecturer: "Dr Ng Ming Ho",
+    events: [
+      { time: "9:30-10:30", description: "Basics in set theory" },
+      { time: "10:30-11:30", description: "Basics in set theory" },
+      { time: "11:30-12:30", description: "Basics in set theory Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "ruler-and-compass construction exercises" },
+      { time: "18:30-20:30", description: "Group Reading" }
+    ]
+  },
+  {
+    date: "Aug 16",
+    lecturer: "Dr Xiao Jingjing",
+    events: [
+      { time: "9:30-10:30", description: "Indefinite Integrations" },
+      { time: "10:30-11:30", description: "Indefinite Integrations" },
+      { time: "11:30-12:30", description: "Indefinite Integrations" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "In-class exercises" },
+      { time: "16:00-17:30", description: ["Seminar: Applications of calculus: curve fitting.", "Guest Speaker from CUHK, Dr Chan Hiu Ning"] },
+      { time: "18:30-20:30", description: "Activities (Badminton/Table Tennis/Self-study/Board Games)" }
+    ]
+  },
+  {
+    date: "Aug 17",
+    lecturer: "Dr Ng Ming Ho",
+    events: [
+      { time: "9:30-10:30", description: "Basics in matrix theory" },
+      { time: "10:30-11:30", description: "Basics in matrix theory" },
+      { time: "11:30-12:30", description: "Basics in matrix theory Q&A" },
+      { time: "14:00-17:30", description: "Field Trip: SmartMore (Visit smart Manufacturing Museum + 2 hours Lecture)" },
+      { time: "18:30-20:30", description: "Activities (Badminton/Table Tennis/Self-study/Board Games)" }
+    ]
+  },
+  {
+    date: "Aug 18",
+    lecturer: "Dr Xiao Jingjing",
+    events: [
+      { time: "9:30-10:30", description: "First Order ODEs" },
+      { time: "10:30-11:30", description: "First Order ODEs" },
+      { time: "11:30-12:30", description: "First Order ODEs" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "Group work" },
+      { time: "16:00-17:30", description: "Q&A" },
+      { time: "18:30-20:30", description: "Cinema Night: A Beautiful Mind" }
+    ]
+  },
+  {
+    date: "Aug 19",
+    lecturer: "Dr Ng Ming Ho",
+    events: [
+      { time: "9:30-10:30", description: "Basis in complex number" },
+      { time: "10:30-11:30", description: "Basics in number theory" },
+      { time: "11:30-12:30", description: "Bases in complex number and number theory Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "ruler-and-compass construction exercises" },
+      { time: "18:30-20:30", description: "Activities (Badminton/Table Tennis/Self-study/Board Games)" }
+    ]
+  },
+  {
+    date: "Aug 20",
+    lecturer: "Dr Xiao Jingjing",
+    events: [
+      { time: "9:30-10:30", description: "Applications of First Order ODEs" },
+      { time: "10:30-11:30", description: "Applications of First Order ODEs" },
+      { time: "11:30-12:30", description: "Applications of First Order ODEs" },
+      { time: "14:00-17:30", description: "Field Trip: CocoRobo (Hands-on workshop, 3 hours)" },
+      { time: "18:30-20:30", description: "Workshop: Project presentation (Learn how to give a speech based on reading mathematical articles)" }
+    ]
+  },
+  {
+    date: "Aug 21",
+    lecturer: "Dr Ng Ming Ho",
+    events: [
+      { time: "9:30-10:30", description: "Fundamental theorem of algebra" },
+      { time: "10:30-11:30", description: "Fundamental theorem of algebra" },
+      { time: "11:30-12:30", description: "Fundamental theorem of algebra Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "ruler-and-compass construction exercises" },
+      { time: "18:30-20:30", description: "Activities (Badminton/Table Tennis/Self-study/Board Games)" }
+    ]
+  },
+  {
+    date: "Aug 22",
+    lecturer: "",
+    events: [
+      { time: "Morning", description: "Talk & Lab Visit" },
+      { time: "Afternoon", description: "M+ Hong Kong's global museum of visual culture" }
+    ]
+  },
+  {
+    date: "Aug 23",
+    lecturer: "Dr Xiao Jingjing",
+    events: [
+      { time: "9:30-10:30", description: "Second Order ODEs" },
+      { time: "10:30-11:30", description: "Second Order ODEs" },
+      { time: "11:30-12:30", description: "Second Order ODEs" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "Revision/Q&A" },
+      { time: "16:00-17:30", description: "1-hour Exam" },
+      { time: "18:30-20:30", description: "Revision" }
+    ]
+  },
+  {
+    date: "Aug 24",
+    lecturer: "Dr Ng Ming Ho",
+    events: [
+      { time: "9:30-10:30", description: "Basics in group theory" },
+      { time: "10:30-11:30", description: "Basics in group theory" },
+      { time: "11:30-12:30", description: "Basics in group theory Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "Revision/Q&A" },
+      { time: "16:00-17:30", description: "1-hour Exam" },
+      { time: "18:30-20:30", description: "Workshop: Project presentation (Group report preparation competition)" }
+    ]
+  },
+  {
+    date: "Aug 25",
+    lecturer: "",
+    events: [
+      { time: "9:30-12:30", description: "Fun Competition" },
+      { time: "14:00-17:30", description: "Completion ceremony (Sharing learning insights, certificate awarding) and Group Photo" }
     ]
   }
 ];
@@ -173,13 +317,13 @@ const timetable_1 = [
 export default function ClassTimetable() {
   return (
     <div>
-      <h1 className="text-4xl/8 text-center font-bold mb-6">Training Programme</h1>
+      <h1 className="text-4xl/8 text-center font-bold mb-8">Training Programme</h1>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Introduction</h2>
-      <p className="text-base md:text-lg/8 indent-8 mb-6">
+      <p className="text-base md:text-lg/8 indent-8 mb-8">
         Innovation drives development, and technology nurtures the future". The foundation of scientific and technological innovation lies in education, while talents are the keys to its achievement. To solidify GBA's status as a talent hub of the kind, the Department of Mathematics, Faculty of Science, CUHK has launched the "Training Programme for Young Mathematics Talents". Relying on CUHK's multi faceted resources and years of project experience, the programme aims at training mathematical-talented young students to acquire scientific literacy and innovation ability through the University's advanced mathematics concepts and methods, so as to lay a foundation for cultivating the next generation of innovation leaders for the Region, and even the Country.
       </p>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Objective</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 mb-8">
         <div className="bg-gradient-to-tl from-yellow-100 to-green-100 dark:from-gray-800 dark:to-green-800 rounded-lg p-4 text-center">
           <p className="text-base md:text-lg/8 text-black dark:text-white">
             Accelerating students' interest in basic mathematics or STEM and raising their awareness, cognition, and understanding in the field.
@@ -197,7 +341,7 @@ export default function ClassTimetable() {
         </div>
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Programme Schedule and Fees</h2>
-      <div className="p-6 dark:bg-gray-600 shadow-md rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 ring-gray-900/5 dark:ring-white/10 ring-2 mb-6">
+      <div className="p-6 dark:bg-gray-600 shadow-md rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 ring-gray-900/5 dark:ring-white/10 ring-2 mb-8">
         <div>
           <div className="space-y-4">
             <div className="session">
@@ -216,7 +360,7 @@ export default function ClassTimetable() {
         </div>
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Programme Structure</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-lime-300 dark:bg-lime-700 p-4 rounded-lg shadow-md text-center">
           <h3 className="text-lg/8 md:text-xl/8 font-bold mb-2">Classes</h3>
           <p className="text-base md:text-lg/8">Basic principles and fundamentals theories</p>
@@ -236,6 +380,8 @@ export default function ClassTimetable() {
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Session 1 TimeTable</h2>
       <TimeTable timetable={timetable_1} />
+      <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Session 2 TimeTable</h2>
+      <TimeTable timetable={timetable_2} />
     </div>
   )
 }
