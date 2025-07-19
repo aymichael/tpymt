@@ -18,7 +18,7 @@ function CoachesBox({ photo, name, intro }) {
 export default function CoachesPage() {
     return (
         <div>
-            <h1 className="text-4xl/16 font-bold mb-4">Advisory Board</h1>
+            <h1 className="text-4xl/16 font-bold mb-4">Coaches</h1>
             <div className="flex flex-col space-y-2 md:space-y-4">
                 <CoachesBox
                     photo="/MCBREEN.jpg"
