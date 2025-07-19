@@ -1,6 +1,6 @@
 import TimeTable from "../TimeTable"
 
-const timetable = [
+const timetable_1 = [
   {
     date: "Jul 24",
     lecturer: "Dr Pan Li",
@@ -27,9 +27,9 @@ const timetable = [
       {
         time: "18:30-20:30", description: [
           "Group Reading:",
-          "- Short Introduction to Game Theory",
+          "- A Short Introduction to Game Theory",
           "- Introduction to Graph Theory",
-          "- Introduction to Linear Programming"
+          "- An Introduction to Linear Programming"
         ]
       }
     ]
@@ -43,15 +43,15 @@ const timetable = [
       { time: "11:00-12:00", description: "Linear systems in linear algebra II Q&A" },
       { time: "13:30-14:15", description: "In-class exercises" },
       { time: "14:30-15:30", description: "In-class exercises" },
-      { time: "15:30-17:00", description: "Seminar: Guest Speaker Dr Li Chun Che" },
+      { time: "15:30-17:00", description: "Seminar: Guest Speaker from CUHK, Dr Li Chun Che" },
       {
         time: "18:30-20:30", description: [
           "Board Games:",
-          "- Blokus (2-4)",
-          "- Blokus Trigon (2-4)",
-          "- Ticket to Ride (2-5)",
-          "- Monopoly Deal (2-5)",
-          "- Sanguosha (2-10)"
+          "- Blokus (2-4 players)",
+          "- Blokus Trigon (2-4 players)",
+          "- Ticket to Ride (2-5 players)",
+          "- Monopoly Deal (2-5 players)",
+          "- Sanguosha (2-10 players)"
         ]
       }
     ]
@@ -63,10 +63,8 @@ const timetable = [
       { time: "9:00-9:45", description: "Important results in number theory" },
       { time: "10:00-10:45", description: "Important results in number theory" },
       { time: "11:00-12:00", description: "Important results in number theory Q&A" },
-      { time: "13:30-14:15", description: "Field Trip: SmartMore (Smart Manufacturing Museum + Lecture)" },
-      { time: "14:30-15:30", description: "Activities (Badminton/Table Tennis/Reading)" },
-      { time: "15:30-17:00", description: "" },
-      { time: "18:30-20:30", description: "" }
+      { time: "13:30-17:00", description: "Field Trip: SmartMore (Visit smart Manufacturing Museum + 2 hours Lecture)" },
+      { time: "18:30-20:30", description: "Activities (Badminton/Table Tennis/Reading)" }
     ]
   },
   {
@@ -102,10 +100,8 @@ const timetable = [
       { time: "9:00-9:45", description: "Matrix algebra II" },
       { time: "10:00-10:45", description: "Matrix algebra II" },
       { time: "11:00-12:00", description: "Matrix algebra II Q&A" },
-      { time: "13:30-14:15", description: "Field Trip: CocoRobo (Hands-on workshop)" },
-      { time: "14:30-15:30", description: "Workshop: Project presentation (Math article presentation)" },
-      { time: "15:30-17:00", description: "" },
-      { time: "18:30-20:30", description: "" }
+      { time: "13:30-17:00", description: "Field Trip: CocoRobo (Hands-on workshop, 3 hours)" },
+      { time: "18:30-20:30", description: "Workshop: Project presentation (Learn how to give a speech based on reading mathematical articles)" },
     ]
   },
   {
@@ -121,11 +117,11 @@ const timetable = [
       {
         time: "18:30-20:30", description: [
           "Board Games:",
-          "- Blokus (2-4)",
-          "- Blokus Trigon (2-4)",
-          "- Ticket to Ride (2-5)",
-          "- Monopoly Deal (2-5)",
-          "- Sanguosha (2-10)"
+          "- Blokus (2-4 players)",
+          "- Blokus Trigon (2-4 players)",
+          "- Ticket to Ride (2-5 players)",
+          "- Monopoly Deal (2-5 players)",
+          "- Sanguosha (2-10 players)"
         ]
       }
     ]
@@ -134,13 +130,8 @@ const timetable = [
     date: "Aug 1",
     lecturer: "",
     events: [
-      { time: "9:00-9:45", description: "CUHK Visit: Math Lecture & Lab Tour" },
-      { time: "10:00-10:45", description: "CUHK Visit: Math Lecture & Lab Tour" },
-      { time: "11:00-12:00", description: "CUHK Visit: Math Lecture & Lab Tour" },
-      { time: "13:30-14:15", description: "M+ Museum of Visual Culture Visit" },
-      { time: "14:30-15:30", description: "M+ Museum of Visual Culture Visit" },
-      { time: "15:30-17:00", description: "M+ Museum of Visual Culture Visit" },
-      { time: "18:30-20:30", description: "" }
+      { time: "Morning", description: "Talk & Lab Visit" },
+      { time: "Evening", description: "M+ Hong Kong's global museum of visual culture" }
     ]
   },
   {
@@ -166,20 +157,15 @@ const timetable = [
       { time: "13:30-14:15", description: "Programming workshop: Cryptosystem attacks" },
       { time: "14:30-15:30", description: "Programming workshop: Cryptosystem attacks" },
       { time: "15:30-17:00", description: "1-hour Exam" },
-      { time: "18:30-20:30", description: "Workshop: Math article reading Q&A (Group preparation)" }
+      { time: "18:30-20:30", description: "Workshop: Reading of engaging mathematics articles with Q&A (Group report preparation competition)" }
     ]
   },
   {
     date: "Aug 4",
     lecturer: "",
     events: [
-      { time: "9:00-9:45", description: "Fun Competition: Group presentations" },
-      { time: "10:00-10:45", description: "Fun Competition: Group presentations" },
-      { time: "11:00-12:00", description: "Fun Competition: Group presentations" },
-      { time: "13:30-14:15", description: "Completion Ceremony: Sharing & Certificates" },
-      { time: "14:30-15:30", description: "Completion Ceremony: Sharing & Certificates" },
-      { time: "15:30-17:00", description: "Group Photo" },
-      { time: "18:30-20:30", description: "" }
+      { time: "9:00-12:00", description: ["Fun Report Competition","(Based on group reading on July 25, the project presentation workshop on July 30, and the Q&A session on August 3, teams will participate in a fun report competition. Teachers will score the reports; the winning team will receive rewards, though it won’t count toward grades.)"] },
+      { time: "13:30-17:00", description: "Completion Ceremony and Group Photo" }
     ]
   }
 ];
@@ -211,22 +197,22 @@ export default function ClassTimetable() {
         </div>
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Programme Schedule and Fees</h2>
-      <div className="p-6 bg-white shadow-md rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 ring-gray-900/5 dark:ring-white/10 ring-2 mb-6">
+      <div className="p-6 dark:bg-gray-600 shadow-md rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6 ring-gray-900/5 dark:ring-white/10 ring-2 mb-6">
         <div>
           <div className="space-y-4">
             <div className="session">
               <h3 className="text-lg/8 md:text-xl/8 font-bold">Session 1</h3>
-              <p className="text-gray-600">2023/07/14 - 2023/07/25</p>
+              <p className="text-gray-600 dark:text-gray-200">2023/07/14 - 2023/07/25</p>
             </div>
             <div className="session">
               <h3 className="text-lg/8 md:text-xl/8 font-bold">Session 2</h3>
-              <p className="text-gray-600">2023/08/04 - 2023/08/15</p>
+              <p className="text-gray-600 dark:text-gray-200">2023/08/04 - 2023/08/15</p>
             </div>
           </div>
         </div>
-        <div className=" bg-blue-100 p-4 rounded-lg">
+        <div className=" bg-blue-100 dark:bg-blue-900 p-4 rounded-lg">
           <h3 className="text-lg/8 md:text-xl/8 font-bold">Fees</h3><p className="text-base md:text-lg/8 font-bold">3,980 CNY*</p>
-          <p className="text-sm text-gray-600 mt-2">*Fees covered meals, accommodation, and activities (Personal expenses of any kind are excluded)</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">*Fees covered meals, accommodation, and activities (Personal expenses of any kind are excluded)</p>
         </div>
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Programme Structure</h2>
@@ -249,7 +235,7 @@ export default function ClassTimetable() {
         </div>
       </div>
       <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4">Session 1 TimeTable</h2>
-      <TimeTable timetable={timetable} />
+      <TimeTable timetable={timetable_1} />
     </div>
   )
 }
