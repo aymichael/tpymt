@@ -1,0 +1,36 @@
+
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply w-10 h-10 bg-white dark:bg-blue-500 dark:text-white rounded-full ring-1 ring-black/10 shadow-lg items-center justify-center text-gray-700 text-sm font-bold hidden md:flex;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-base;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply bg-gray-100 text-gray-900 dark:bg-blue-600 dark:text-white;
+}
+
+.swiper-button-prev {
+  @apply left-2 translate-y-12;
+}
+
+.swiper-button-next {
+  @apply right-2 -translate-y-12;
+}
+
+.swiper-pagination-bullet {
+  @apply opacity-100 bg-white;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-blue-500 dark:bg-blue-400;
+}
