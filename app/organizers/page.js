@@ -49,8 +49,9 @@ export default function OrganizersPage() {
                 />
             </div>
             <p className="mb-2 indent-8 text-base md:text-lg/8">
-                With a great support of the Shenzhen Municipal Government, CUHK Shenzhen Research Institute (SZRI), the first wholly owned industry-university-institute base of CUHK in the Mainland, was established in May 2007. Being one of the important platforms for the strategic development of CUHK in the Mainland, SZRI has been expanding the University’s developments in Shenzhen, the Guangdong- Hong Kong Macao Greater Bay Area (GBA) and other cities of mainland China over the years, through providing comprehensive support in academic and research advancement, talents cultivation, technology transfer, global connection, as well as innovation and development.
+                Established in August 2020, the Office for Greater Bay Area Developments (GBAO) of CUHK actively participates in the development of the Greater Bay Area (GBA) and facilitates the implementation of the University’s strategic plans and projects in GBA by providing support to university members in academic research, innovation and entrepreneurship, and other activities in GBA. In addition, GBAO will help strengthen communication and cooperation with municipal offices, business partners, industrial institutions, and alumni-related organizations.
             </p>
         </div>
     );
 }
+
