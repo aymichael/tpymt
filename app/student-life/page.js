@@ -17,9 +17,6 @@ export default function StudentLifePage() {
         .then(response => response.json())
         .then(data => {setImages(data.images)})
         }, [])
-
-    console.log(images);
-
     return (
         <div>
             <h1 className={`text-4xl/16 font-bold text-center mb-8 ${sriracha.className}`}>Student Life</h1>
