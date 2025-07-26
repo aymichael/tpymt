@@ -2,7 +2,7 @@ import TimeTable from "../TimeTable"
 
 const timetable_1 = [
   {
-    date: "Jul 15",
+    date: "Jul 14",
     lecturer: "Dr Pan Li",
     events: [
       { time: "9:30-10:30", description: "Linear systems in linear algebra I" },
@@ -15,20 +15,20 @@ const timetable_1 = [
     ]
   },
   {
-    date: "Jul 16",
+    date: "Jul 15",
     lecturer: "Dr Liu Chun Lung",
     events: [
-      { time: "9:30-10:30", description: "Basics in number theory" },
-      { time: "10:30-11:30", description: "Basics in number theory" },
-      { time: "11:30-12:30", description: "Basics in number theory Q&A" },
+      { time: "9:30-10:30", description: "Logic" },
+      { time: "10:30-11:30", description: "Logic" },
+      { time: "11:30-12:30", description: "Logic Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "In-class exercises" },
-      { time: "16:00-17:30", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "Q&A" },
       { time: "18:30-20:00", description: "Group Reading" }
     ]
   },
   {
-    date: "Jul 17",
+    date: "Jul 16",
     lecturer: "Dr Pan Li",
     events: [
       { time: "9:30-10:30", description: "Linear systems in linear algebra II" },
@@ -36,23 +36,23 @@ const timetable_1 = [
       { time: "11:30-12:30", description: "Linear systems in linear algebra II Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "In-class exercises" },
-      { time: "16:00-17:30", description: "Seminar: Application of algebra in coding theory. Guest Speaker from CUHK, Dr Kai Leung CHAN" },
+      { time: "16:00-17:30", description: "Seminar: Magic Mathematics on Grids - Magic Square by Dr Charles LI" },
       { time: "18:30-20:00", description: "Board Games" }
     ]
   },
   {
-    date: "Jul 18",
+    date: "Jul 17",
     lecturer: "Dr Liu Chun Lung",
     events: [
-      { time: "9:30-10:30", description: "Important results in number theory" },
-      { time: "10:30-11:30", description: "Important results in number theory" },
-      { time: "11:30-12:30", description: "Important results in number theory Q&A" },
-      { time: "14:00-17:30", description: "Field Trip: Sensetime (Visit exhibition hall + lecture)" },
-      { time: "18:30-20:00", description: "Activities" }
+      { time: "9:30-10:30", description: "Sets" },
+      { time: "10:30-11:30", description: "Sets" },
+      { time: "11:30-12:30", description: "Sets Q&A" },
+      { time: "14:00-17:30", description: "Field Trip: BYD Company" },
+      { time: "18:30-20:00", description: "Activities (Badminton/Table Tennis/Reading)" }
     ]
   },
   {
-    date: "Jul 19",
+    date: "Jul 18",
     lecturer: "Dr Pan Li",
     events: [
       { time: "9:30-10:30", description: "Matrix algebra I" },
@@ -65,52 +65,51 @@ const timetable_1 = [
     ]
   },
   {
-    date: "Jul 20",
+    date: "Jul 19",
     lecturer: "Dr Liu Chun Lung",
     events: [
-      { time: "9:30-10:30", description: "Basic cryptosystems" },
-      { time: "10:30-11:30", description: "Basic cryptosystems" },
-      { time: "11:30-12:30", description: "Basic cryptosystems Q&A" },
-      { time: "14:00-15:00", description: "Programming workshop on encryption, decryption" },
-      { time: "15:00-16:00", description: "Programming workshop on encryption, decryption" },
-      { time: "16:00-17:30", description: "Programming workshop on encryption, decryption" },
-      { time: "18:30-20:00", description: "Activities" }
+      { time: "9:30-10:30", description: "Relations" },
+      { time: "10:30-11:30", description: "Relations" },
+      { time: "11:30-12:30", description: "Relations Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "Q&A" },
+      { time: "18:30-20:00", description: "Activities (Badminton/Table Tennis/Reading)" }
     ]
   },
   {
-    date: "Jul 21",
+    date: "Jul 20",
     lecturer: "Dr Pan Li",
     events: [
       { time: "9:30-10:30", description: "Matrix algebra II" },
       { time: "10:30-11:30", description: "Matrix algebra II" },
       { time: "11:30-12:30", description: "Matrix algebra II Q&A" },
-      { time: "14:00-17:30", description: "Field Trip: CocoRobo (Hands-on workshop, complete a work)" },
+      { time: "14:00-17:30", description: "Field Trip: CocoRobo (Hands-on workshop)" },
       { time: "18:30-20:00", description: "Workshop: project presentation (Based on reading mathematical articles, learn how to give a speech)" }
     ]
   },
   {
-    date: "Jul 22",
+    date: "Jul 21",
     lecturer: "Dr Liu Chun Lung",
     events: [
-      { time: "9:30-10:30", description: "Attacks of cryptosystems" },
-      { time: "10:30-11:30", description: "Attacks of cryptosystems" },
-      { time: "11:30-12:30", description: "Attacks of cryptosystems Q&A" },
+      { time: "9:30-10:30", description: "Functions" },
+      { time: "10:30-11:30", description: "Functions" },
+      { time: "11:30-12:30", description: "Functions Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "In-class exercises" },
-      { time: "16:00-17:30", description: "In-class exercises" },
+      { time: "16:00-17:30", description: "Q&A" },
       { time: "18:30-20:00", description: "Board Games" }
     ]
   },
   {
-    date: "Jul 23",
+    date: "Jul 22",
     lecturer: "",
     events: [
-      { time: "9:30-12:30", description: "Visit to CUHK: Lecture: A Taste of University Mathematics by Prof. Chan Kwok Wai; Admission Talk by Dr. Chan Tsz Lung; Visit to Math Lab" },
-      { time: "14:00-17:30", description: "M+ Hong Kong's global museum of visual culture" }
+      { time: "Full day", description: "Visit to CUHK" },
     ]
   },
   {
-    date: "Jul 24",
+    date: "Jul 23",
     lecturer: "Dr Pan Li",
     events: [
       { time: "9:30-10:30", description: "Determinant" },
@@ -123,36 +122,36 @@ const timetable_1 = [
     ]
   },
   {
-    date: "Jul 25",
+    date: "Jul 24",
     lecturer: "Dr Liu Chun Lung",
     events: [
-      { time: "9:30-10:30", description: "Digital signature" },
-      { time: "10:30-11:30", description: "Digital signature" },
-      { time: "11:30-12:30", description: "Digital signature Q&A" },
-      { time: "14:00-15:00", description: "Programming workshop on attacks of cryptosystems" },
-      { time: "15:00-16:00", description: "Programming workshop on attacks of cryptosystems" },
+      { time: "9:30-10:30", description: "Number Systems" },
+      { time: "10:30-11:30", description: "Number Systems" },
+      { time: "11:30-12:30", description: "Number Systems Q&A" },
+      { time: "14:00-15:00", description: "In-class exercises" },
+      { time: "15:00-16:00", description: "Revision/Q&A" },
       { time: "16:00-17:30", description: "1-hour Exam" },
-      { time: "18:30-20:00", description: "Workshop: Reading of mathematics articles with Q&A (Group preparation for presentation competition)" }
+      { time: "18:30-20:00", description: "Workshop: Mathematics article reading with Q&A (Group preparation for presentation competition)" }
     ]
   },
   {
-    date: "Jul 26",
+    date: "Jul 25",
     lecturer: "",
     events: [
-      { time: "9:30-12:30", description: "Fun Competition (Based on group reading on July 16, the project presentation workshop on July 21, and the Q&A session on July 25, teams will participate in a fun report competition. Winning team will receive rewards, though it won’t count toward grades)" },
-      { time: "14:00-17:30", description: "Completion Ceremony and Group Photo" }
+      { time: "9:30-12:30", description: "Fun Competition (Based on previous group reading and workshops, a fun presentation competition will be held. The winning team will receive a reward, but it won’t count toward grades.)" },
+      { time: "14:00-17:30", description: "Completion ceremony and Group Photo" }
     ]
   }
 ];
 
 const timetable_2 = [
   {
-    date: "Aug 5",
+    date: "Aug 4",
     lecturer: "Dr Xiao Jingjing",
     events: [
-      { time: "9:30-10:30", description: "Derivatives" },
-      { time: "10:30-11:30", description: "Derivatives" },
-      { time: "11:30-12:30", description: "Derivatives" },
+      { time: "9:30-10:30", description: "Logic" },
+      { time: "10:30-11:30", description: "Logic" },
+      { time: "11:30-12:30", description: "Logic Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "Group work" },
       { time: "16:00-17:30", description: "Q&A" },
@@ -160,7 +159,7 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 6",
+    date: "Aug 5",
     lecturer: "Dr Ng Ming Ho",
     events: [
       { time: "9:30-10:30", description: "Basics in set theory" },
@@ -173,12 +172,12 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 7",
+    date: "Aug 6",
     lecturer: "Dr Xiao Jingjing",
     events: [
-      { time: "9:30-10:30", description: "Indefinite Integrations" },
-      { time: "10:30-11:30", description: "Indefinite Integrations" },
-      { time: "11:30-12:30", description: "Indefinite Integrations" },
+      { time: "9:30-10:30", description: "Sets" },
+      { time: "10:30-11:30", description: "Sets" },
+      { time: "11:30-12:30", description: "Sets Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "In-class exercises" },
       { time: "16:00-17:30", description: "Q&A" },
@@ -186,55 +185,55 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 8",
+    date: "Aug 7",
     lecturer: "Dr Ng Ming Ho",
     events: [
       { time: "9:30-10:30", description: "Basics in matrix theory" },
       { time: "10:30-11:30", description: "Basics in matrix theory" },
       { time: "11:30-12:30", description: "Basics in matrix theory Q&A" },
-      { time: "14:00-17:30", description: "Field Trip: Sensetime (Visit exhibition hall + lecture)" },
-      { time: "18:30-20:00", description: "Activities" }
+      { time: "14:00-17:30", description: "Field Trip (Exhibition hall visit + lecture)" },
+      { time: "18:30-20:00", description: "Activities (Badminton/Table Tennis/Reading)" }
     ]
   },
   {
-    date: "Aug 9",
+    date: "Aug 8",
     lecturer: "Dr Xiao Jingjing",
     events: [
-      { time: "9:30-10:30", description: "First Order ODEs" },
-      { time: "10:30-11:30", description: "First Order ODEs" },
-      { time: "11:30-12:30", description: "First Order ODEs" },
+      { time: "9:30-10:30", description: "Relations" },
+      { time: "10:30-11:30", description: "Relations" },
+      { time: "11:30-12:30", description: "Relations Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "Group work" },
-      { time: "16:00-17:30", description: "Seminar: An introduction to Symmetry in Mathematics by Prof Micheal Mcbreen" },
+      { time: "16:00-17:30", description: "Seminar" },
       { time: "18:30-20:00", description: "Cinema Night: A Beautiful Mind" }
     ]
   },
   {
-    date: "Aug 10",
+    date: "Aug 9",
     lecturer: "Dr Ng Ming Ho",
     events: [
-      { time: "9:30-10:30", description: "Basis in complex number" },
-      { time: "10:30-11:30", description: "Basics in number theory" },
+      { time: "9:30-10:30", description: "Basics in number theory" },
+      { time: "10:30-11:30", description: "Basis in complex number" },
       { time: "11:30-12:30", description: "Bases in complex number and number theory Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "In-class exercises" },
       { time: "16:00-17:30", description: "ruler-and-compass construction exercises" },
-      { time: "18:30-20:00", description: "Activities" }
+      { time: "18:30-20:00", description: "Activities (Badminton/Table Tennis/Reading)" }
     ]
   },
   {
-    date: "Aug 11",
+    date: "Aug 10",
     lecturer: "Dr Xiao Jingjing",
     events: [
-      { time: "9:30-10:30", description: "Applications of First Order ODEs" },
-      { time: "10:30-11:30", description: "Applications of First Order ODEs" },
-      { time: "11:30-12:30", description: "Applications of First Order ODEs" },
-      { time: "14:00-17:30", description: "Field Trip: CocoRobo (Hands-on workshop, complete a work)" },
+      { time: "9:30-10:30", description: "Functions" },
+      { time: "10:30-11:30", description: "Functions" },
+      { time: "11:30-12:30", description: "Functions Q&A" },
+      { time: "14:00-17:30", description: "Field Trip: CocoRobo (Hands-on workshop)" },
       { time: "18:30-20:00", description: "Workshop: project presentation (Based on reading mathematical articles, learn how to give a speech)" }
     ]
   },
   {
-    date: "Aug 12",
+    date: "Aug 11",
     lecturer: "Dr Ng Ming Ho",
     events: [
       { time: "9:30-10:30", description: "Fundamental theorem of algebra" },
@@ -247,20 +246,19 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 13",
+    date: "Aug 12",
     lecturer: "",
     events: [
-      { time: "9:30-12:30", description: "Visit to CUHK: Lecture: An introduction to Symmetry in Mathematics by Prof. Jin Bangti; Admission Talk by Dr. Chan Kai Leung; Visit to Math Lab" },
-      { time: "14:00-17:30", description: "M+ Hong Kong's global museum of visual culture" }
+      { time: "Full day", description: "Visit to CUHK" },
     ]
   },
   {
-    date: "Aug 14",
+    date: "Aug 13",
     lecturer: "Dr Xiao Jingjing",
     events: [
-      { time: "9:30-10:30", description: "Second Order ODEs" },
-      { time: "10:30-11:30", description: "Second Order ODEs" },
-      { time: "11:30-12:30", description: "Second Order ODEs" },
+      { time: "9:30-10:30", description: "Number Systems" },
+      { time: "10:30-11:30", description: "Number Systems" },
+      { time: "11:30-12:30", description: "Number Systems Q&A" },
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "Revision/Q&A" },
       { time: "16:00-17:30", description: "1-hour Exam" },
@@ -268,7 +266,7 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 15",
+    date: "Aug 14",
     lecturer: "Dr Ng Ming Ho",
     events: [
       { time: "9:30-10:30", description: "Basics in group theory" },
@@ -281,7 +279,7 @@ const timetable_2 = [
     ]
   },
   {
-    date: "Aug 16",
+    date: "Aug 15",
     lecturer: "",
     events: [
       { time: "9:30-12:30", description: "Fun Competition" },
@@ -322,11 +320,11 @@ export default function ClassTimetable() {
           <div className="space-y-4">
             <div className="session">
               <h3 className="text-lg/8 md:text-xl/8 font-bold">Session 1</h3>
-              <p className="text-gray-600 dark:text-gray-200">2024/07/15 - 2024/07/26</p>
+              <p className="text-gray-600 dark:text-gray-200">2025/07/14 - 2025/07/25</p>
             </div>
             <div className="session">
               <h3 className="text-lg/8 md:text-xl/8 font-bold">Session 2</h3>
-              <p className="text-gray-600 dark:text-gray-200">2024/08/05 - 2024/08/16</p>
+              <p className="text-gray-600 dark:text-gray-200">2025/08/04 - 2025/08/15</p>
             </div>
           </div>
         </div>

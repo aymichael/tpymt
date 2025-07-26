@@ -157,7 +157,7 @@ const timetable_1 = [
       { time: "13:30-14:15", description: "Programming workshop: Cryptosystem attacks" },
       { time: "14:30-15:30", description: "Programming workshop: Cryptosystem attacks" },
       { time: "15:30-17:00", description: "1-hour Exam" },
-      { time: "18:30-20:30", description: "Workshop: Reading of engaging mathematics articles with Q&A (Group report preparation competition)" }
+      { time: "18:30-20:30", description: "Workshop: Reading of engaging mathematics articles with Q&A (Group preparation for presentation competition)" }
     ]
   },
   {
@@ -301,7 +301,7 @@ const timetable_2 = [
       { time: "14:00-15:00", description: "In-class exercises" },
       { time: "15:00-16:00", description: "Revision/Q&A" },
       { time: "16:00-17:30", description: "1-hour Exam" },
-      { time: "18:30-20:30", description: "Workshop: Project presentation (Group report preparation competition)" }
+      { time: "18:30-20:30", description: "Workshop: Project presentation (Group preparation for presentation competition)" }
     ]
   },
   {
