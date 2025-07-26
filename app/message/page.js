@@ -53,7 +53,7 @@ export default function Page() {
                 "Wei Lun Professor of Chemistry, CUHK"
             ],
             "content": ["The Faculty of Science at CUHK has long been committed to educating and inspiring the next generation of scientific innovators. Established in 1963, the Faculty of Science of CUHK has taken pride in providing the stimulating environment for young people and active scholars to learn science and undertake research. We hope to provide an enriched learning environment and endeavour to enhance students’ learning experience by offering a variety of lecture courses and activities. We hope our initiatives can help students develop their independent, critical thinking, and problem-solving skills, as well as boost their creativity.", "It is our privilege to embark on the “Training Programme for Young Mathematics Talents” which is funded by the TUYF Charitable Trust and supported by various organisations. Our Department of Mathematics has a world-class team with a global impact. The Programme offers enormous opportunities for the talents in GBA to broaden their horizons, unleash their potential and lay the foundation for their future development in the field of science and innovation.", "I sincerely hope that the programme will nurture more talents with constructive spirit. By learning science, devoting themselves to research activities and building on collaboration, I believe they could contribute to the improvement of human life and help make the world a better place."],
-            "image": "/SONGChunshan.png"
+            "image": "/SONGChunShan.png"
         },
         {
             "name": "Prof. ZOU Jun",
