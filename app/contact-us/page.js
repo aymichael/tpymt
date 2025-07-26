@@ -10,7 +10,7 @@ function ContactCard({ departmentName, website, telephone, emails, addresses, ph
                 <div>
                     {/* Link to website */}
                     <p className="text-base md:text-lg/8">
-                        <strong className="text-black">Website: </strong>
+                        <strong>Website: </strong>
                         <Link href={website} className="text-blue-600 hover:text-blue-800">
                             {website}
                         </Link>
@@ -39,14 +39,14 @@ function ContactCard({ departmentName, website, telephone, emails, addresses, ph
                             : addresses}
                     </p>
                 </div>
-                <div className="h-48 overflow-hidden hidden md:flex items-center justify-center min-w-1/3">
+                <div className="w-1/3 overflow-hidden hidden md:flex items-center justify-center min-w-1/3">
                     <Image
                         src={photo}
                         width={0}
                         height={0}
                         alt={departmentName}
                         sizes="auto"
-                        className="h-full w-auto object-contain"
+                        className="w-full object-contain bg-white"
                     />
                 </div>
             </div>

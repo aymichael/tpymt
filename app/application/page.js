@@ -47,7 +47,7 @@ export default function ApplicationPage() {
             <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4"> Certificate of Attendance</h2>
             <p className="text-base md:text-lg/8 mb-8">Upon completion of the programme, a certificate of attendance will be issued by the Department of Mathematics, Faculty of Science, CUHK.</p>
 
-            <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 md:mb-0">报名咨询 Enquiry</h2>
+            <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 md:mb-0">Enquiry</h2>
             <div className="flex md:flex-row flex-col justify-between md:items-end gap-2 md:gap-0">
                 <div>
                     <p className="text-base md:text-lg/8">Telephone: (86) 755-8692 0032</p>
@@ -58,7 +58,7 @@ export default function ApplicationPage() {
                     <p className="text-base md:text-lg/8">
                         Scan the QR Code for application
                     </p><div className="h-24 w-24 relative self-center">
-                        <Image src="/QRcode.jpg" alt="Application QRcode" layout="fill" objectFit="cover" className="rounded-lg" />
+                        <Image src="/QRcode.jpg" alt="Application QRcode" layout="fill" objectFit="cover"/>
                     </div>
                 </div>
             </div>
