@@ -14,9 +14,14 @@ export default function StudentLifePage() {
     const [images, setImages] = useState([]);
     useEffect(() => {
         fetch('/api/images')
-        .then(response => response.json())
-        .then(data => {setImages(data.images)})
-        }, [])
+            .then(response => response.json())
+            .then(data => {
+                // randomly choose 10 images from the list
+                const shuffledImages = data.images.sort(() => 0.5 - Math.random());
+                setImages(shuffledImages.slice(0, 10));
+            })
+    }, [])
+
     return (
         <div>
             <h1 className={`text-4xl/16 font-bold text-center mb-8 ${sriracha.className}`}>Student Life</h1>
@@ -30,7 +35,7 @@ export default function StudentLifePage() {
                     autoplay={{ delay: 5000 }}
                 >
                     {
-                        Array.from({ length: images.length / 2 }, (_, i) => (
+                        Array.from({ length: 5 }, (_, i) => (
                             <SwiperSlide key={i} className="flex justify-center items-center">
                                 <div className="flex flex-col gap-4 justify-center items-center w-full">
                                     {images.slice(i * 2, i * 2 + 2).map((image, index) => (
