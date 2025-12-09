@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import TimeTable from "../TimeTable"
 
 const timetable_1 = [
