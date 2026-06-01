@@ -1,34 +1,42 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Image from 'next/legacy/image';
 
+// Bringing in the elegant font from your new theme!
+import { Playfair_Display } from "next/font/google";
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 const MessageCard = ({ name, position, content, photo }) => {
     return (
-        <div className="w-full ring-1 ring-black/5 dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <div className="w-full h-full flex flex-col bg-white/95 dark:bg-[#1E293B] shadow-xl rounded-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-shadow duration-300">
             <div className="flex space-x-4">
-                <div className='w-full flex gap-8'>
-                    <div className="h-60 w-48 relative hidden md:block self-center">
-                        <Image src={photo} alt={name} layout="fill" objectFit="cover" className="rounded-lg" />
+                <div className='w-full flex gap-8 md:gap-12'>
+                    <div className="h-64 w-48 relative hidden md:block self-center flex-shrink-0">
+                        <Image src={photo} alt={name} layout="fill" objectFit="cover" className="rounded-lg shadow-md" />
                     </div>
-                    <div className="flex flex-col justify-end">
-                        <h3 className="text-xl/8 md:text-2xl/8 font-bold">{name}</h3>
-                        <div className="text-gray-600 flex flex-col dark:text-gray-400">
+                    <div className="flex flex-col justify-center">
+                        <h3 className={`text-2xl md:text-3xl font-bold text-[#0F172A] dark:text-white mb-2 ${playfair.className}`}>{name}</h3>
+                        <div className="flex flex-col space-y-1 mt-2">
                             {position.map((pos, index) => (
-                                <p key={index} className="text-base md:text-base">{pos}</p>
+                                <p key={index} className="text-sm md:text-base font-medium text-gray-500 dark:text-[#EAD09D]">{pos}</p>
                             ))}
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="mt-4 text-lg flex flex-col space-y-4">
+            
+            <div className="w-16 h-1 bg-[#EAD09D] my-8 rounded-full hidden md:block"></div>
+
+            <div className="mt-6 md:mt-2 flex flex-col flex-grow space-y-5">
                 {content.map((paragraph, index) => (
-                    <p key={index} className="indent-8 text-base md:text-lg/8">{paragraph}</p>
+                    <p key={index} className="text-base md:text-lg text-slate-700 dark:text-gray-300 leading-relaxed text-justify">{paragraph}</p>
                 ))}
             </div>
         </div>
@@ -72,33 +80,44 @@ export default function Page() {
             "content": ["The Chinese University of Hong Kong (CUHK) Shenzhen Research Institute (SZRI) was established in 2007 as one of the very first research bases in the Mainland set up by Hong Kong tertiary institutions. Since its establishment, SZRI has been a pivot to CUHK’s many developments in the Guangdong-Hong Kong-Macao Greater Bay Area (GBA) and a bridging channel between Hong Kong and the Mainland. Aligning with CUHK’s mission “to combine tradition with modernity, and to bring together China and the West,” SZRI maintains itself as an earnest, pragmatic, pioneering, innovative entity in its wide ranging activities across the fields of technology application, education and research. The Institute adopts an objective, pro active, supportive and collaborative spirit in supporting the University, alumni and partners on endeavors in advanced research, talent cultivation, technology translation and start-up incubation.", "While we are witnessing the great progresses made in multiple scientific and technological fields in the Mainland today, we must never lose sight of the fundamental role played by basic research. In this regard, the launching of the “Training Programme for Young Mathematics Talents” co-organized by the Department of Mathematics of the Faculty of Science at CUHK and SZRI, is a timely reminder of this important message. We truly hope the Programme will be successful in cultivating high level talents with strong mathematical thinking at their early age and at the same time attaining the enhanced support of colleagues in the education community. The work of realizing a pool of young talents capable of engaging in forward-looking basic research and innovative technological exploration will have tremendous impact to the future of GBA, China and the world!"],
             "image": "/YAMYeung.jpg"
         }
-    ]
+    ];
 
     return (
-
-        <div>
-            <h1 className="text-4xl/16 font-bold md:mb-8 mb-4">
-                Message from Management
-            </h1>
-            <Swiper
-                modules={[Pagination]}
-                pagination={{ clickable: true }}
-                spaceBetween={100}
-                className="mySwiper"
-            >
-                {messages.map((message, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="p-1">
-                            <MessageCard
-                                name={message.name}
-                                position={message.position}
-                                content={message.content}
-                                photo={message.image}
-                            />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+        <div className="w-full max-w-screen-2xl mx-auto pt-8 px-2 md:px-4">
+            
+            {/* UPDATED: Removed the drop-shadow class for a clean, crisp look */}
+            <h1 className="text-4xl/16 font-bold text-[#0F172A] text-center mb-8">Message from Management</h1>
+            
+            <div className="relative w-full 
+                [&_.swiper-button-next]:text-[#EAD09D] [&_.swiper-button-prev]:text-[#EAD09D]
+                [&_.swiper-button-next]:drop-shadow-md [&_.swiper-button-prev]:drop-shadow-md
+                [&_.swiper-button-next]:z-50 [&_.swiper-button-prev]:z-50
+                [&_.swiper-button-next]:scale-75 md:[&_.swiper-button-next]:scale-100
+                [&_.swiper-button-prev]:scale-75 md:[&_.swiper-button-prev]:scale-100
+                [&_.swiper-pagination-bullet-active]:bg-[#0F172A] dark:[&_.swiper-pagination-bullet-active]:bg-[#EAD09D]
+                [&_.swiper-pagination-bullet]:opacity-100 [&_.swiper-pagination-bullet:not(.swiper-pagination-bullet-active)]:bg-gray-300
+            ">
+                <Swiper
+                    modules={[Pagination, Navigation]}
+                    pagination={{ clickable: true }}
+                    navigation={true}
+                    spaceBetween={40}
+                    className="mySwiper !pb-16 !px-6 md:!px-12"
+                >
+                    {messages.map((message, index) => (
+                        <SwiperSlide key={index} className="!h-auto">
+                            <div className="py-2 h-full">
+                                <MessageCard
+                                    name={message.name}
+                                    position={message.position}
+                                    content={message.content}
+                                    photo={message.image}
+                                />
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
         </div>
     );
 }

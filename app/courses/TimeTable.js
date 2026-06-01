@@ -1,77 +1,62 @@
 "use client"
 
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/react'
+import { Playfair_Display, Lato } from "next/font/google";
 
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const lato = Lato({ subsets: ["latin"], weight: ["400"] });
 
+export default function SessionInfo({ sessions }) {
+    // Fallback in case no data is provided
+    if (!sessions || sessions.length === 0) {
+        return null;
+    }
 
-
-export default function TimeTable({ timetable }) {
-  return (
-    <div className="mb-8">
-      <TabGroup>
-        <TabList className="flex space-x-2 rounded-xl bg-blue-500 dark:bg-blue-700 p-2 overflow-x-auto select-none">
-          {timetable.map((day) => (
-            <Tab
-              key={day.date}
-              className={({ selected }) =>
-                `rounded-xl py-2 leading-5 whitespace-nowrap
-                 ring-white ring-offset-2 focus:ring-offset-blue-700 focus:outline-none focus:ring-2 px-3
-                 ${selected ? 'bg-white shadow text-blue-700' : 'text-blue-100 hover:bg-white/10 hover:text-white'}`
-              }
-            >
-              {day.date}
-            </Tab>
-          ))}
-        </TabList>
-        <TabPanels className="pt-2 border rounded-b-xl border-t-0 border-gray-100 dark:border-gray-600">
-          {timetable.map((day) => (
-            <TabPanel 
-              key={day.date} 
-              className="rounded-xl p-3 shadow-sm"
-            >
-              <div className="mb-2 px-2">
-                <h2 className="text-xl/8 md:text-2xl/8 font-bold">{day.date}</h2>
-                {day.lecturer != "" && <h3 className="text-xl text-gray-600 dark:text-gray-400">Lecturer: {day.lecturer}</h3>}
-              </div>
-              <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead>
-                    <tr className="text-base md:text-lg/8 text-left text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      <th className="px-4 py-3">
-                        Time
-                      </th>
-                      <th className="px-4 py-3">
-                        Event
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {day.events.map((event, index) => (
-                      <tr key={index}>
-                        <td className="px-4 py-3 whitespace-nowrap text-sm md:text-base">
-                          {event.time}
-                        </td>
-                        <td className="px-4 py-3 text-sm md:text-base">
-                          {/* Handle both array and string descriptions */}
-                          {Array.isArray(event.description) ? (
-                            <ul className="space-y-1">
-                              {event.description.map((line, i) => (
-                                <li key={i}>{line}</li>
-                              ))}
-                            </ul>
-                          ) : (
-                            event.description
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </TabPanel>
-          ))}
-        </TabPanels>
-      </TabGroup>
-    </div>
-  )
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {sessions.map((session, index) => (
+                <div 
+                    key={index} 
+                    className="bg-white/95 dark:bg-[#1E293B] shadow-xl rounded-xl p-8 md:p-10 border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-shadow duration-300"
+                >
+                    {/* Session Title (e.g., "Session 1") */}
+                    <h2 className={`text-2xl md:text-3xl font-bold text-[#0F172A] dark:text-white mb-4 ${playfair.className}`}>
+                        {session.title || `Session ${index + 1}`}
+                    </h2>
+                    
+                    {/* Gold Accent Divider */}
+                    <div className="w-16 h-1 bg-[#EAD09D] mb-8 rounded-full"></div>
+                    
+                    {/* Session Details */}
+                    <div className={`space-y-6 ${lato.className}`}>
+                        <div className="flex flex-col">
+                            <span className="text-sm font-bold tracking-widest uppercase text-[#EAD09D] mb-1">
+                                Dates
+                            </span>
+                            <span className="text-lg font-medium text-slate-800 dark:text-gray-200">
+                                {session.dates}
+                            </span>
+                        </div>
+                        
+                        <div className="flex flex-col">
+                            <span className="text-sm font-bold tracking-widest uppercase text-[#EAD09D] mb-1">
+                                Course
+                            </span>
+                            <span className="text-lg font-medium text-slate-800 dark:text-gray-200">
+                                {session.course}
+                            </span>
+                        </div>
+                        
+                        <div className="flex flex-col">
+                            <span className="text-sm font-bold tracking-widest uppercase text-[#EAD09D] mb-1">
+                                Lecturer
+                            </span>
+                            <span className="text-lg font-medium text-slate-800 dark:text-gray-200">
+                                {session.lecturer}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
 }

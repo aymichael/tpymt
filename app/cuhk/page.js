@@ -4,11 +4,11 @@ import Image from "next/legacy/image";
 export default function CUHKPage() {
     return (
         <div>
-            <h1 className="text-4xl/16 font-bold text-[#78176f] text-center mb-8">The Chinese University of Hong Kong</h1>
+            <h1 className="text-4xl/16 font-bold text-[#0F172A] text-center mb-8">The Chinese University of Hong Kong</h1>
 
             {/* Introduction Section */}
             <section className="mb-8">
-                <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 text-[#78176f]">About CUHK</h2>
+                <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 text-[#0F172A]">About CUHK</h2>
                 <p className="indent-8 text-base md:text-lg/8">
                     Founded in 1963, The Chinese University of Hong Kong (CUHK), with a global vision “to combine tradition with modernity, and to bring together China and the West,” is a forward-looking comprehensive research university that aims to nurture students with both specialized knowledge and wisdom for life. CUHK undertakes a wide range of research programmes in different areas and strives to support all academic staff to undertake consultancy and collaborative projects with the industry.
                 </p>
@@ -17,7 +17,7 @@ export default function CUHKPage() {
                 </p>
             </section>
             <section className="mb-8">
-                <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 text-[#78176f]">CHUK Rankings and Figures</h2>
+                <h2 className="text-xl/8 md:text-2xl/8 font-bold mb-4 text-[#0F172A]">CHUK Rankings and Figures</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2  gap-4">
                     <div className="bg-white dark:bg-gray-500 p-6 rounded-lg shadow-md text-center"><h3 className="text-xl/8 md:text-2xl/8 font-bold"><span className="text-6xl text-[#78176f]">4</span> Nobel Laureates</h3>
                     </div>

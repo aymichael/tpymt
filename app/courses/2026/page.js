@@ -1,27 +1,27 @@
-import CourseTemplate from "../../components/CourseTemplate";
+import CourseTemplate from "../../components/CourseTemplate"; 
 
-export default function Page2023() {
-    const sessions2023 = [
+export default function Page2026() {
+    const sessions2026 = [
         {
             title: "Session 1",
-            dates: "July 24 - August 4, 2023",
+            dates: "July 13 - July 21, 2026",
             courses: [
                 {
                     name: "Linear Algebra with Applications",
                     lecturer: "Dr. Pan Li"
                 },
                 {
-                    name: "Real-world Application of Number Theory: Cryptography",
+                    name: "Set Theory and Logic",
                     lecturer: "Dr. Liu Chun Lung"
                 }
             ]
         },
         {
             title: "Session 2",
-            dates: "August 14 - August 25, 2023",
+            dates: "August 3 - August 11, 2026",
             courses: [
                 {
-                    name: "Calculus and Differential Equations",
+                    name: "Set Theory and Logic",
                     lecturer: "Dr. Xiao Jingjing"
                 },
                 {
@@ -32,5 +32,5 @@ export default function Page2023() {
         }
     ];
 
-    return <CourseTemplate year="2023" sessions={sessions2023} />;
+    return <CourseTemplate year="2026" sessions={sessions2026} />;
 }

@@ -47,11 +47,6 @@ export default function AdvisoryBoardPage() {
                     positions={["William M.W. Mong Professor of Mathematics", " Executive Director, The Institute of Mathematical Sciences, CUHK"]}
                 />
                 <ProfileBox
-                    photoUrl="/YUJiuKang.jpg"
-                    name="Prof. YU Jiu Kang"
-                    positions={["Lee Hysan Professor of Mathematics", "Department of Mathematics, Faculty of Science, CUHK"]}
-                />
-                <ProfileBox
                     photoUrl="/ZOUJun.png"
                     name="Prof. ZOU Jun"
                     positions={["Choh-Ming Li Professor of Mathematics", "Chairman, Department of Mathematics, Faculty of Science, CUHK"]}
